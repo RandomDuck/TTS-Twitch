@@ -43,13 +43,13 @@ class twitchBot(commands.Bot):
       return self.settings.messages[command]
     
 
-    async def event_raided(self, channel, user, raid_count):
+    async def event_raided(self, channel, user, raid_count): #detect raid
         print(f'Raid detected! {user} raided {channel} with {raid_count} viewers!')
         if (self.active and self.commandActive('raid')):
           await channel.send(self.getMessage('raid').format(n=raid_count, u=user))
 
     @commands.command()
-    async def tts(self, ctx: commands.Context): # make tts
+    async def tts(self, ctx: commands.Context): #make tts
         if (self.active and self.commandActive('tts')):
           message = ctx.message.content[len(self.prefix)+3:]
           self.newTTS(f'{ctx.author.name} says {message}' if self.sayName else message)
