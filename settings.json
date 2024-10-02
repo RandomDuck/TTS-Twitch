@@ -10,6 +10,7 @@
     "soundboard": true
   },
   "messages": {
+    "help": "Availalbe commands include: tts: send a tts, about: info about the channel, help: list commands and their use, shoutout: shoutout a user, rules: display rules , discord: display the discord message, soundboard: plays sounds on stream",
     "about": "Hello, welcome to my stream. I stream things for reasons. lets all have a good time.",
     "shoutout": "Hey {u}, thanks you're awesome. But not as awesome as ducks.", //use {u} for placement of the mention of the user
     "rules": "#1 No foxes, #2 No discrimination (unless its against foxes), #3 UwU, Ara ara",
