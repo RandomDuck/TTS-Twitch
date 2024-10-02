@@ -6,6 +6,9 @@ from ttsBot import twitchBot
 from ttsUI import gui
 import sys
 
+#TODO: setup soundBoard functionality
+#TODO: fix UI to generate toggles for all commands
+
 config = {}
 with open('config.json') as f:
     config = json.load(f)
