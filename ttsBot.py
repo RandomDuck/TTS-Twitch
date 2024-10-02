@@ -72,12 +72,12 @@ class twitchBot(commands.Bot):
         await ctx.message.channel.send(self.getMessage('shoutout').format(u=message))
 
     @commands.command()
-    async def rules(self, ctx: commands.Context): #display rule number x or all rules/link to rules 
+    async def rules(self, ctx: commands.Context): #display all rules or a link to rules 
         if (self.active and self.commandActive('rules')):
           await ctx.message.channel.send(self.getMessage('rules'))
 
     @commands.command()
-    async def discord(self, ctx: commands.Context): #display the discord message
+    async def discord(self, ctx: commands.Context): #display the discord message/link
         if (self.active and self.commandActive('discord')):
           await ctx.message.channel.send(self.getMessage('discord'))
 
