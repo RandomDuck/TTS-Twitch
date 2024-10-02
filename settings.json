@@ -1,0 +1,19 @@
+// Disable the commands by removing them from "activeCommands", this requires a reboot.
+{
+  "activeCommands": {
+    "tts": true,
+    "about": true,
+    "help": true,
+    "shoutout": true,
+    "rules": true,
+    "discord": true,
+    "soundboard": true
+  },
+  "messages": {
+    "about": "Hello, welcome to my stream. I stream things for reasons. lets all have a good time.",
+    "shoutout": "Hey {u}, thanks you're awesome. But not as awesome as ducks.", //use {u} for placement of the mention of the user
+    "rules": "#1 No foxes, #2 No discrimination (unless its against foxes), #3 UwU, Ara ara",
+    "discord": "link to discord here: https://FAKELINK.DISCORD/Join",
+    "raid": "Thank you {u} for raiding with {n} people" //use {u} for placement of the mention of the use, and {n} for how many is raided with.
+  }
+}
