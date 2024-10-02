@@ -2,4 +2,3 @@ pydub
 gtts
 twitchio
 pyqt6
-simpleaudio
