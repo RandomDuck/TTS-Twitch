@@ -11,9 +11,9 @@ class gui(QWidget):
         self.text="Listening" if self.bot.active else "Inactive"
         self.textTts="Speaking" if self.bot.commandActive('tts') else "Muted"
         self.textName="say names" if self.bot.sayName else "not say names"
-        self.button = QPushButton(f"Bot IS: {self.text}")
-        self.buttonTts = QPushButton(f"TTS IS: {self.textTts}")
-        self.buttonName = QPushButton(f"Bot will: {self.textName}")
+        self.button = QPushButton(f"Bot is: {self.text}")
+        self.buttonTts = QPushButton(f"TTS is: {self.textTts}")
+        self.buttonName = QPushButton(f"TTS will: {self.textName}")
         self.button.pressed.connect(self.toggleBot)
         self.buttonTts.pressed.connect(self.toggleTts)
         self.buttonName.pressed.connect(self.toggleNames)
