@@ -1,6 +1,6 @@
 from gtts import gTTS # type: ignore
-from pydub import AudioSegment
-from pydub.playback import play
+from pydub import AudioSegment # type: ignore
+from pydub.playback import play # type: ignore
 from twitchio.ext import commands # type: ignore
 from io import BytesIO
 import json;
