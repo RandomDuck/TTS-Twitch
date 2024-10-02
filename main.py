@@ -23,6 +23,6 @@ def runUI():
 
 
 if __name__ == "__main__":
-    botT = Thread(target=runUI)
+    botT = Thread(target=runBot)
     botT.start()
-    runBot()
+    runUI()
