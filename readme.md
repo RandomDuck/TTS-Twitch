@@ -28,3 +28,33 @@ To run with control panel:
 
 To run without control panel:
 >python ttsBot.py
+
+
+### dealing with settings
+The settings file has values to personalise ur bot experiance.
+#### disabling commands
+Disable the commands by changing them from "true" to "false", this requires a reboot.
+```json
+"activeCommands": { 
+    "tts": true,
+    "about": true,
+    "help": true,
+    "shoutout": true,
+    "rules": true,
+    "discord": true,
+    "soundboard": true
+  },
+```
+#### custom messages
+in messages some commands (Currently shoutout and Raid) have some runtime variables.
+use {u} for placement of the name of the user, and {n} for numerical runtime value (right no, # of raid participants).
+```json
+ "messages": {
+    "help": "Availalbe commands include: tts: send a tts, about: info about the channel, help: list commands and their use, shoutout: shoutout a user, rules: display the rules, discord: display the discord message, soundboard: plays sounds on stream",
+    "about": "Hello, welcome to my stream. I stream things for reasons. lets all have a good time.",
+    "shoutout": "Hey {u}, thanks you're awesome. But not as awesome as ducks.",
+    "rules": "#1 No foxes, #2 No discrimination (unless its against foxes), #3 UwU, Ara ara",
+    "discord": "link to discord here: https://FAKELINK.DISCORD/Join",
+    "raid": "Thank you {u} for raiding with {n} people" 
+  }
+```
