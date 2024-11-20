@@ -1,7 +1,7 @@
 # TTS bot for twitch
 This is a tts bot for twitch you can run local on your own machine. it requires FFMPEG to work.
 
-### To install 
+# To install 
 Simply make sure FFMPEG and python is installed then run
 >pip install -r requirmenets.txt
 
@@ -21,7 +21,7 @@ config Example
 
 To ensure you have the right channel for ur purpose you can simply look att the URL of the twitch streamer page (ex. [twitch.tv/dougdoug](https://www.twitch.tv/dougdoug))
 
-### Running the bot
+# Running the bot
 you can choose to run it with or without the control panel.\
 To run with control panel:
 >python main.py
@@ -33,7 +33,7 @@ To run without control panel:
 ### dealing with settings
 The settings file has values to personalise ur bot experiance.
 #### disabling commands
-Disable the commands by changing them from "true" to "false", this requires a reboot.
+Commands can be disabled on the go in the UI, However to Disable the commands on boot (or to change the default state of a command) you must edit the config by changing them from "true" to "false", this requires.
 ```json
 "activeCommands": { 
     "tts": true,

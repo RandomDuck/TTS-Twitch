@@ -6,12 +6,12 @@ from io import BytesIO
 import json;
 
 class twitchBot(commands.Bot):
-  #todo: add a raid announcment message
-
     def __init__(self, token, prefix, targetChannels):
         self.settings = {}
         with open('settings.json') as f:
             self.settings = json.load(f)
+            f.close()
+        
         self.active = True # type: ignore
         self.ttsActive = True # type: ignore
         self.prefix = prefix
@@ -37,10 +37,11 @@ class twitchBot(commands.Bot):
       mp3_fp.seek(0)
       play(AudioSegment.from_mp3(mp3_fp))
     
-    def commandActive(self, command):
+    # interface with settings easier, reduces line length
+    def commandActive(self, command): 
       return self.settings['activeCommands'][command]
     
-    def getMessage(self, command):
+    def getMessage(self, command): 
       return self.settings['messages'][command]
     
 
@@ -97,5 +98,6 @@ if __name__ == "__main__":
   config = {}
   with open('config.json') as f:
     config = json.load(f)
+    f.close()
   bot = twitchBot(config['twitchKey'], config['prefix'], config['targetChannels'])
   bot.run()

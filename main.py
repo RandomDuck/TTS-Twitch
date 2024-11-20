@@ -7,11 +7,12 @@ from ttsUI import gui
 import sys
 
 #TODO: setup soundBoard functionality
-#TODO: fix UI to generate toggles for all commands
+#TODO: expand "help" command to give more details if a command is supplied
 
 config = {}
 with open('config.json') as f:
     config = json.load(f)
+    f.close()
 
 bot = twitchBot(config['twitchKey'], config['prefix'], config['targetChannels'])
 app = QApplication(sys.argv)
