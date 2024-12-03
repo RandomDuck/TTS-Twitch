@@ -7,7 +7,9 @@ from ttsUI import gui
 import sys
 
 #TODO: setup soundBoard functionality
+#TODO: counters using websockets
 #TODO: expand "help" command to give more details if a command is supplied
+# Consider using websockets to display graphics on screen during a raid? advanced system low priority in this case.
 
 config = {}
 with open('config.json') as f:
