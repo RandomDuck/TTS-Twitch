@@ -22,7 +22,7 @@ config Example
 }
 ```
 
-Tokens can be henerated [here](https://twitchtokengenerator.com/)
+Tokens can be generated [here](https://twitchtokengenerator.com/)
 
 To ensure you have the right channel for ur purpose you can simply look att the URL of the twitch streamer page (ex. [twitch.tv/dougdoug](https://www.twitch.tv/dougdoug))
 
